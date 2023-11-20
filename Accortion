@@ -1,0 +1,155 @@
+import Accordion from 'react-bootstrap/Accordion';
+
+functions:
+  const [toggle, settoggle] = useState(1);
+
+  const toggletab = (index) => {
+    settoggle(index);
+  }
+
+
+code :
+        <div className='row pt-4'>
+
+          <div className='head_tabs'>
+            <div className={toggle === 1 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggletab(1)}>ABOUT COLLECTION</div>
+
+            <div className={toggle === 2 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggletab(2)}>ABOUT CHARACTER</div>
+
+            <div className={toggle === 3 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggletab(3)}>VISION</div>
+
+            <div className={toggle === 4 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggletab(4)}>COMMUNITY</div>
+
+            <div className={toggle === 5 ? "tabs active-tabs" : "tabs"}
+              onClick={() => toggletab(5)}>DISCORD</div>
+          </div>
+
+          <div className='body_tabs'>
+            <div className={toggle === 1 ? "content active-content" : "content"}>
+
+              <div className='row'>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center'>
+                  <h1>About <br />Collection</h1><br /><br />
+                  <p>PercKrazy-8 Are a Collection of 5555 Randomly Generated Unique Characters And
+                    Functionality By The NeuroTechnology, You Have A Digital Art That Is Verifiably By Your Own,<br /><br />
+                    A Digital Character That Can Be Used As Your Identify In The Virutal Town, And Gives You
+                    Access To Our Online And Offline Community</p>
+                </div>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'>
+                  <img src="images/image5.webp" alt='logo' width={"100%"}></img>
+                </div>
+              </div>
+
+            </div>
+
+            <div className={toggle === 2 ? "content active-content" : "content"}>
+
+              <div className='row'>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'>
+                  <img src="images/image4.webp" alt='logo' width={"100%"}></img>
+                </div>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center'>
+                  <h1>About<br /> Character</h1><br /><br />
+                  <p>PercKrazy-8 Is An Mammal Character Which Is Used To Manufacturing And Smuggling Drugs
+                    To The Homo Sapiens.<br />All The Mammals Are Controlled By NeuralChip By Annonymous Person...,
+                    He Is The First Character In The Story...,<br /><br /> We Going To Spot How The Sovereign States
+                    United Togethers As An PERCTOWN</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div className={toggle === 3 ? "content active-content" : "content"}>
+
+              <div className='row'>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center'>
+                  <h1>Vision</h1><br /><br />
+                  <p>PercKrazy-8 Vision To Create A Adventure Fantasy Game Line Story To Real Virtual World
+                    That Can Be Enjoyed Across Both Physical And Digital World.<br /><br />
+                    We Believe The World Make A More Positive Vibes And
+                    We Create Moments Of Life Live A Drug Free LifeStyle</p>
+                </div>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'>
+                  <img src="images/image7.webp" alt='logo' width={"100%"}></img>
+                </div>
+              </div>
+
+            </div>
+
+            <div className={toggle === 4 ? "content active-content" : "content"}>
+
+              <div className='row'>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'>
+                  <img src="images/image6.webp" alt='logo' width={"100%"}></img>
+                </div>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center'>
+                  <h1>Community</h1><br /><br />
+                  <p>PercKrazy-8 an Community Around a "Say NO To Drugs"Theme Can Be A Great Way To Raise Awareness And Encourage Positive Behavior And Helps To Come Out From The Durgs.
+                    This Can Help Attract individuals Who Share Similar Values And Create a Positive and Thriving Community.<br /><br /></p>
+                  <div className='text-box'><p>Ultimately The Goal Of Promoting a Drug-Free Lifesytle Within An NFT Community is To Create An Environment That Supports Overall Well-Being and Encourages Healthy Habits And Behaviors</p></div>
+                </div>
+              </div>
+
+            </div>
+
+            <div className={toggle === 5 ? "content active-content" : "content"}>
+
+              <div className='row'>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 text-center'>
+                  <h1>Discord</h1><br /><br />
+                  <p>
+                    Our Community Discord Server Daily To Chat With The People All Over The Universe.<br />Participate In Conversation An Engage With Community Members And Build The Friendly Conversation.<br /><br /> We Have The Social Channel To Engage Topic From CryptoCurrency, Fitness , Daily Topic , Foodies , Games. Join The Community Enjoy The Weekly Events And Activities And Build The Durg Free LifeStyle
+                  </p>
+                </div>
+                <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6'>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+Css :
+.head_tabs
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tabs
+{
+  background-color: gray;
+  color: black;
+  padding: 15px 30px;
+
+}
+
+.active-tabs
+{
+  color: red;
+  background-color: white;
+}
+
+.body_tabs
+{
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: #142125;
+}
+.content
+{
+  display: none;
+}
+.active-content
+{
+  display: block;
+}
